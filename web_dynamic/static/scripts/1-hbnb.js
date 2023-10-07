@@ -1,10 +1,9 @@
 $(() => {
   console.log('loaded');
-   const checkedAmenities = {};
+  const checkedAmenities = {};
   $(':checkbox').change(function () {
-
     if (this.checked) {
-        checkedAmenities[$(this).attr('data-id')] = $(this).attr('data-name');
+      checkedAmenities[$(this).attr('data-id')] = $(this).attr('data-name');
     } else {
       delete checkedAmenities[$(this).attr('data-id')];
     }
